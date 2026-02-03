@@ -1,22 +1,86 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Desafio de Projeto – POO com .NET (Smartphone)
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+## 📌 Descrição do Projeto
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+Este projeto foi desenvolvido como parte do desafio do módulo de **Programação Orientada a Objetos (POO)** da trilha **.NET** da **DIO**.
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+O objetivo é modelar um sistema simples de celulares utilizando conceitos fundamentais de POO, como **abstração**, **herança** e **polimorfismo**, permitindo o reaproveitamento de código e a especialização de comportamentos.
 
-![Diagrama classes](Imagens/diagrama.png)
+---
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## 🧠 Conceitos Aplicados
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+* Classe abstrata
+* Herança
+* Polimorfismo (sobrescrita de métodos)
+* Encapsulamento
+* Construtores e reutilização de código
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+O sistema é composto pelas seguintes classes:
+
+### 🔹 Smartphone (classe abstrata)
+
+Classe base que serve como modelo para os celulares.
+
+**Propriedades:**
+
+* `Numero`
+* `Modelo`
+* `IMEI`
+* `Memoria`
+
+**Métodos:**
+
+* `Ligar()`
+* `ReceberLigacao()`
+* `InstalarAplicativo(string nomeApp)` (método abstrato)
+
+> Essa classe não pode ser instanciada diretamente.
+
+---
+
+### 🔹 Iphone (classe filha)
+
+Herda da classe `Smartphone` e implementa seu próprio comportamento para instalação de aplicativos.
+
+* Sobrescreve o método `InstalarAplicativo`
+
+---
+
+### 🔹 Nokia (classe filha)
+
+Também herda da classe `Smartphone` e possui sua própria implementação do método de instalação de aplicativos.
+
+* Sobrescreve o método `InstalarAplicativo`
+
+---
+
+## ▶️ Execução do Programa
+
+No arquivo `Program.cs`, são criadas instâncias de um **iPhone** e de um **Nokia**, demonstrando:
+
+* Chamada de métodos herdados da classe abstrata
+* Polimorfismo no método `InstalarAplicativo`
+
+O programa exibe no console as ações realizadas por cada tipo de smartphone.
+
+---
+
+## ✅ Regras do Desafio Atendidas
+
+* ✔ Classe `Smartphone` definida como abstrata
+* ✔ Classes `Iphone` e `Nokia` herdando de `Smartphone`
+* ✔ Método `InstalarAplicativo` sobrescrito em cada classe filha
+* ✔ Sistema funcional em aplicação console (.NET)
+
+---
+
+## 🚀 Conclusão
+
+O desafio foi concluído com sucesso, aplicando corretamente os conceitos de Programação Orientada a Objetos. O projeto demonstra de forma clara como a abstração e o polimorfismo facilitam a extensão e manutenção do código.
+
+Projeto finalizado e pronto para entrega 🎉
