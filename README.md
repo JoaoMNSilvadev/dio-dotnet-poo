@@ -1,4 +1,29 @@
-# Desafio de Projeto – POO com .NET (Smartphone)
+# dio-dotnet-poo
+
+Projeto desenvolvido durante o Bootcamp Back-end .NET da DIO com foco em Programação Orientada a Objetos utilizando C#.
+
+## Sobre o projeto
+
+Este projeto foi criado para praticar conceitos de Programação Orientada a Objetos.
+
+## Conceitos praticados
+
+- Classes e objetos
+- Encapsulamento
+- Métodos e propriedades
+- Organização de código
+- Programação Orientada a Objetos
+
+## Tecnologias utilizadas
+
+- C#
+- .NET
+- Git
+- GitHub
+
+## Autor
+
+João Matheus do Nascimento Silva
 
 ## 📌 Descrição do Projeto
 
